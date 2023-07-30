@@ -1,0 +1,594 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Inter"),
+    url("../assets/fonts/Inter/static/Inter-Regular.ttf") format("ttf");
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.mobile__menu-trigger{
+    display: none;
+}
+
+.header__wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.mobile__menu {
+    display: none;
+}
+.menu__list {
+    width: 793px;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 0 0 0;
+}
+.menu__list-link {
+    display: flex;
+}
+.logging__container {
+    width: 163px;
+}
+.display-position {
+    display: flex;
+    justify-content: space-between;
+}
+.main-background {
+    background-color: #fefdfc;
+    /* height: 100vh; */
+}
+.main__wrapper {
+    display: grid;
+    grid-template-areas:
+        "main__block-elipse     main__block             main__block-image"
+        "main__block-curved-2   main__block-curved-2    main__block-image";
+    margin: 60px auto 0 auto;
+    /* width: 1920px; */
+}
+.main__block-elipse {
+    grid-area: main__block-elipse;
+}
+.main__block {
+    grid-area: main__block;
+}
+.main__block-curved-1 {
+    float: right;
+    margin-right: 67px;
+    position: relative;
+    /* z-index: 999; */
+}
+.main__block-curved-2 {
+    grid-area: main__block-curved-2;
+    margin-top: -30px;
+}
+
+.main__block-arrow {
+    float: right;
+    margin-top: -47px;
+    margin-right: 40px;
+}
+.main__block-bigimage {
+    grid-area: main__block-image;
+    width: 808px;
+    height: 784px;
+    margin-top: 66px;
+    margin-left: -20px;
+}
+.main__block {
+    width: 849px;
+    height: 346px;
+    margin-top: 160px;
+    margin-left: 80px;
+}
+.main__block-list {
+    width: 575px;
+    height: 30px;
+    list-style-type: none;
+    margin: 0 0 57px 0;
+    padding: 0;
+}
+.main__block-title{
+    font-size: 70px;
+    margin-bottom: 22px;
+    margin-top: 72px;
+    white-space: nowrap;
+}
+.main__block-text {
+    font-size: 23px;
+    margin-bottom: 23px;
+}
+.button-green {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #00634b;
+    border-radius: 13px;
+}
+.text-white {
+    color: #ffffff;
+}
+.main__block-button {
+    width: 220px;
+    height: 56px;
+    line-height: 56px;
+}
+.logging__container-register {
+    width: 99px;
+    line-height: 39px;
+    height: 39px;
+    cursor: pointer;
+}
+.logging__container-login {
+    line-height: 39px;
+}
+.popup__registration {
+    width: 464px;
+    height: 730px;
+    position: fixed;
+    display: none;
+    z-index: 3;
+    top: 175px;
+    left: 38%;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.popup__registration-show {
+    display: block;
+}
+.popup__registration-wrapper {
+    width: 400px;
+    margin: 34px auto 0 auto;
+}
+.popup__registration-form {
+    display: flex;
+    flex-direction: column;
+}
+.popup__registration-title {
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+}
+.popup__registration-link {
+    text-decoration: underline;
+}
+.height-input {
+    height: 52px;
+}
+.popup-mb {
+    margin-bottom: 26px;
+}
+.popup-radius {
+    border-radius: 10px;
+}
+.popup-pl {
+    padding-left: 10px;
+}
+.popup__registration-button {
+    background-color: #00634b;
+    cursor: pointer;
+}
+.popup__registration-close {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 34px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+    z-index: 2;
+}
+.popup__registration-show {
+    display: block;
+}
+@media (min-width: 1366px) and (max-width: 1919px) {
+
+    .header__wrapper {
+        width: 84.187vw;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .menu__list {
+        width: 58.053vw;
+        margin: 0;
+        padding: 8px 0 0 0;
+    }
+    .logging__container {
+        width: 11.933vw;
+    }
+    .main__wrapper {
+        display: grid;
+        grid-template-areas:
+        "main__block-elipse     main__block             main__block-image"
+        "main__block-curved-2   main__block-curved-2    main__block-image";
+        margin: 60px auto 0 auto;
+    }
+    .main__block-curved-1 {
+        margin-right: -5.344vw;
+        /* z-index: 999; */
+    }
+    .main__block-curved-2 {
+        margin-top: 3.660vw;
+    }
+
+    .main__block-arrow {
+        margin-top: -1.757vw;
+        margin-right: -3.294vw;
+    }
+    .main__block-bigimage {
+        width: 42.151vw;
+        height: auto;
+        margin-top: 4.832vw;
+        margin-left: 0.952vw;
+    }
+    .main__block {
+        width: 39.152vw;
+        height: 27.329vw;
+        margin-top: 11.713vw;
+        margin-left: -2.928vw;
+    }
+    .main__block-list {
+        width: 42.094vw;
+        height: 30px;
+        margin: 0 0 5.124vw 0;
+    }
+    .main__block-title{
+        font-size: 3.660vw;
+        margin-bottom: 1.611vw;
+        margin-top: 5.271vw;
+    }
+    .main__block-text {
+        font-size: 1.464vw;
+        margin-bottom: 1.464vw;
+    }
+    .main__block-button {
+        width: 220px;
+        height: 56px;
+        line-height: 56px;
+    }
+    .logging__container-register {
+        width: 99px;
+        line-height: 39px;
+        height: 39px;
+        cursor: pointer;
+    }
+    .logging__container-login {
+        line-height: 39px;
+    }
+    .popup__registration {
+        width: 464px;
+        height: 730px;
+        top: 175px;
+        left: 38%;
+    }
+    .popup__registration-wrapper {
+        width: 400px;
+        margin: 34px auto 0 auto;
+    }
+    .popup__registration-title {
+        font-size: 27px;
+    }
+    .height-input {
+        height: 52px;
+    }
+    .popup-mb {
+        margin-bottom: 26px;
+    }
+    .popup-radius {
+        border-radius: 10px;
+    }
+    .popup-pl {
+        padding-left: 10px;
+    }
+    .popup__registration-close {
+        right: 34px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1365px) {
+
+    .header__wrapper {
+        width: 95.187vw;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .menu__list {
+        width: 58.053vw;
+        margin: 0;
+        padding: 8px 0 0 0;
+    }
+    .logging__container {
+        width: 15.933vw;
+        font-size: 1.464vw;
+    }
+    .main__wrapper {
+        display: grid;
+        grid-template-areas:
+            "main__block-elipse     main__block             main__block-image"
+            "main__block-curved-2   main__block-curved-2    main__block-image";
+        margin: 30px auto 0 auto;
+    }
+    .main__block-curved-1 {
+        margin-right: -6.344vw;
+        margin-top: -1.906vw;
+        width: 19.74vw;
+        /* z-index: 999; */
+    }
+    .main__block-curved-2 {
+        width: 26.042vw;
+        margin-top: 7.66vw;
+    }
+
+    .main__block-arrow {
+        width: 19.531vw;
+        margin-top: -1.757vw;
+        margin-right: -3.294vw;
+    }
+    .main__block-bigimage {
+        width: 42.151vw;
+        height: auto;
+        margin-top: 4.832vw;
+        margin-left: 0.952vw;
+    }
+    .main__block {
+        width: 39.152vw;
+        height: 27.329vw;
+        margin-top: 11.713vw;
+        margin-left: -2.928vw;
+    }
+    .main__block-list {
+        width: 42.094vw;
+        height: 30px;
+        margin: 0 0 5.124vw 0;
+    }
+    .main__block-title{
+        font-size: 3.66vw;
+        margin-bottom: 1.611vw;
+        margin-top: 5.271vw;
+    }
+    .main__block-text {
+        font-size: 1.464vw;
+        margin-bottom: 1.464vw;
+    }
+    .main__block-button {
+        width: 20.833vw;
+        height: 6.510vw;
+        line-height: 6.510vw;
+    }
+    .logging__container-register {
+        width: 10.417vw;
+        line-height: 3.906vw;
+        height: 3.906vw;
+        cursor: pointer;
+    }
+    .logging__container-login {
+        line-height: 3.906vw;
+    }
+    .popup__registration {
+        width: 464px;
+        height: 730px;
+        top: 175px;
+        left: 21%;
+    }
+    .popup__registration-wrapper {
+        width: 400px;
+        margin: 34px auto 0 auto;
+    }
+    .popup__registration-title {
+        font-size: 27px;
+    }
+    .height-input {
+        height: 52px;
+    }
+    .popup-mb {
+        margin-bottom: 26px;
+    }
+    .popup-radius {
+        border-radius: 10px;
+    }
+    .popup-pl {
+        padding-left: 10px;
+    }
+    .popup__registration-close {
+        right: 34px;
+    }
+    .main__block-elipse {
+        width: 11.719vw;
+        margin-right: 1.302vw;
+    }
+    .main__block-item {
+        font-size: 1.464vw;
+    }
+    .menu__list-item {
+        font-size: 1.464vw;
+    }
+    .link-arrow {
+        width: 1.953vw;
+    }
+    .logo-images {
+        width: 11.068vw;
+    }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .header__wrapper {
+        width: 95.187vw;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .menu {
+        display: none;
+    }
+    .mobile__menu {
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 22.667vw;
+        transition: right .60s;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+    }
+    .mobile__menu-show {
+        display: block;
+        transition: right .60s;
+    }
+    .mobile__menu__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 5.333vw auto 0 auto;
+        width: 88.187vw;
+    }
+    .mobile__menu__list-item {
+        font-size: 8.464vw;
+        margin-bottom: 5.333vw;
+    }
+    .mobile__menu-trigger {
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+    .logging__container {
+        width: 88.187vw;
+        font-size: 8.464vw;
+        margin: 0 auto;
+    }
+    .main__wrapper {
+        display: grid;
+        grid-template-areas:
+            "main__block-image      main__block-image"
+            "main__block-elipse     main__block"
+            "main__block-curved-2   main__block-curved-2";
+        margin: 30px auto 0 auto;
+        width: 95.187vw;
+    }
+    .main__block-curved-1 {
+        margin-right: -6.344vw;
+        margin-top: -1.906vw;
+        width: 28.74vw;
+        /* z-index: 999; */
+    }
+    .main__block-curved-2 {
+        width: 46.042vw;
+        margin-top: 57.66vw;
+    }
+
+    .main__block-arrow {
+        width: 30.531vw;
+        margin-top: -1.757vw;
+        margin-right: -3.294vw;
+    }
+    .main__block-bigimage {
+        width: 91.151vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    .main__block {
+        width: 72.152vw;
+        height: 27.329vw;
+        margin-top: 3.713vw;
+        margin-left: -2.928vw;
+    }
+    .main__block-list {
+        flex-direction: column;
+        width: 71.094vw;
+        height: auto;
+        margin: 0 0 7.124vw 0;
+    }
+    .main__block-title{
+        font-size: 6.66vw;
+        margin-bottom: 1.611vw;
+        margin-top: 5.271vw;
+    }
+    .main__block-text {
+        font-size: 4.464vw;
+        margin-bottom: 1.464vw;
+    }
+    .main__block-button {
+        width: 37.833vw;
+        height: 10.51vw;
+        line-height: 10.51vw;
+    }
+    .logging__container-register {
+        width: 44.417vw;
+        line-height: 9.906vw;
+        height: 10.906vw;
+        cursor: pointer;
+    }
+    .logging__container-login {
+        line-height: 10.906vw;
+    }
+    .popup__registration {
+        width: 100vw;
+        height: 194.667vw;
+        top: 175px;
+        left: 0;
+    }
+    .popup__registration-wrapper {
+        width: 92vw;
+        margin: 34px auto 0 auto;
+    }
+    .popup__registration-title {
+        font-size: 27px;
+    }
+    .height-input {
+        height: 52px;
+    }
+    .popup-mb {
+        margin-bottom: 26px;
+    }
+    .popup-radius {
+        border-radius: 10px;
+    }
+    .popup-pl {
+        padding-left: 10px;
+    }
+    .popup__registration-close {
+        right: 34px;
+    }
+    .main__block-elipse {
+        width: 15.719vw;
+        margin-right: 1.302vw;
+    }
+    .main__block-item {
+        font-size: 4.464vw;
+        margin-bottom: 2.667vw;
+    }
+    .menu__list-item {
+        font-size: 1.464vw;
+    }
+    .link-arrow {
+        width: 1.953vw;
+    }
+    .logo-images {
+        width: 46.068vw;
+    }
+    .main__block-image {
+        width: 5.333vw;
+    }
+    .display-hidden{
+        display: none;
+    }
+}

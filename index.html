@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn without limits</title>
+    <link rel="stylesheet" href="/public/normalize.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="header">
+    <div class="header__wrapper display-position">
+        <div class="logo">
+            <img src="/assets/icons/logo.svg" alt="logo" class="logo-images">
+        </div>
+        <nav class="menu">
+            <ul class="menu__list display-position">
+                <li class="menu__list-item"><a href="#" class="menu__list-link">About</a></li>
+                <li class="menu__list-item"><a href="#" class="menu__list-link">Courses <img src="/assets/icons/chevron-down.svg" alt="link-arrow" class="link-arrow"></a></li>
+                <li class="menu__list-item"><a href="#" class="menu__list-link">Universities <img src="/assets/icons/chevron-down.svg" alt="link-arrow" class="link-arrow"></a></li>
+                <li class="menu__list-item"><a href="#" class="menu__list-link"></a>Online Degrees</li>
+                <li class="menu__list-item"><a href="#" class="menu__list-link"></a>Teacher</li>
+            </ul>
+        </nav>
+        <div class="logging__container display-position display-hidden">
+            <div class="logging__container-login">Log in</div>
+            <div class="logging__container-register button-green text-white">Register</div>
+        </div>
+        <div class="mobile__menu-trigger"><img src="/assets/icons/burger.svg" alt="burger" class="mobile__menu-trigger-img"></div>
+    </div>
+    <nav class="mobile__menu">
+        <div class="logging__container display-position">
+            <div class="logging__container-login">Log in</div>
+            <div class="logging__container-register button-green text-white">Register</div>
+        </div>
+        <ul class="mobile__menu__list">
+            <li class="mobile__menu__list-item"><a href="#" class="mobile__menu__list-link">About</a></li>
+            <li class="mobile__menu__list-item"><a href="#" class="mobile__menu__list-link">Courses <img src="/assets/icons/chevron-down.svg" alt="link-arrow" class="link-arrow"></a></li>
+            <li class="mobile__menu__list-item"><a href="#" class="mobile__menu__list-link">Universities <img src="/assets/icons/chevron-down.svg" alt="link-arrow" class="link-arrow"></a></li>
+            <li class="mobile__menu__list-item"><a href="#" class="mobile__menu__list-link"></a>Online Degrees</li>
+            <li class="mobile__menu__list-item"><a href="#" class="mobile__menu__list-link"></a>Teacher</li>
+        </ul>
+    </nav>
+</header>
+<main class="main main-background">
+    <div class="main__wrapper">
+        <img src="/assets/images/elipse.png" alt="elipse" class="main__block-elipse">
+        <div class="main__block">
+            <img src="/assets/images/curved-line-1.png" alt="curved" class="main__block-curved-1">
+            <h1 class="main__block-title">Learn without limits</h1>
+            <p class="main__block-text">
+                Start, switch, or advance your career with more than 5,800 courses, Professional Certificates, and degrees from world-class universities and companies.<br/>
+                Learning with us is easy because we have
+            </p>
+            <ul class="main__block-list display-position">
+                <li class="main__block-item"><img src="/assets/icons/book.svg" alt="Big library" class="main__block-image">Big library </li>
+                <li class="main__block-item"><img src="/assets/icons/dollar-sign.svg" alt="Low prices" class="main__block-image">Low prices</li>
+                <li class="main__block-item"><img src="/assets/icons/certificate.svg" alt="Professional certificates" class="main__block-image">Professional certificates</li>
+            </ul>
+            <div class="main__block-button button-green text-white">Start learning</div>
+            <img src="/assets/images/arrow.png" alt="curved" class="main__block-arrow">
+        </div>
+        <img src="/assets/images/curved-line-2.png" alt="curved" class="main__block-curved-2">
+        <img src="/assets/images/main-page-image.png" alt="main-page-image" class="main__block-bigimage">
+    </div>
+</main>
+<div class="popup__registration">
+    <div class="popup__registration-wrapper">
+        <img src="/assets/icons/x.svg" alt="close" class="popup__registration-close">
+        <form action="POST" class="popup__registration-form">
+            <p class="popup__registration-title popup-mb">Registration</p>
+            <input type="text" name="name" placeholder="Name Surname" class="popup__registration-name height-input popup-mb popup-radius popup-pl">
+            <input type="email" name="email" placeholder="Email" class="popup__registration-email height-input popup-mb popup-radius popup-pl">
+            <input type="tel" name="tel" placeholder="Phone" class="popup__registration-tel height-input popup-mb popup-radius popup-pl">
+            <select name="find-us" class="popup__registration-find-us height-input popup-mb popup-radius popup-pl">
+                <option value="Instagram">Where did you find us</option>
+                <option value="FaceBook">FaceBook</option>
+            </select>
+            <input type="password" name="password" placeholder="Password" class="popup__registration-password height-input popup-mb popup-radius popup-pl">
+            <input type="password" name="confirm-password" placeholder="Confirm password" class="popup__registration-confirm-password height-input popup-mb popup-radius popup-pl">
+            <div class="popup__registration-agree popup-mb">
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">I agree with <a href="#" class="popup__registration-link">Terms and Conditions</a></label>
+            </div>
+            <button type="button" name="register" class="popup__registration-button height-input popup-radius text-white">Register</button>
+        </form>
+    </div>
+</div>
+<div class="overlay"></div>
+<script src="/script.js"></script>
+</body>
+</html>
